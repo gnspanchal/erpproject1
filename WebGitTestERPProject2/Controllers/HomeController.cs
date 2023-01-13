@@ -11,7 +11,17 @@ namespace WebGitTestERPProject2.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.data1 = "Hello Ganesh.........";
             return View();
         }
+        public ActionResult About()
+        {
+            return View();
+        }
+        public ActionResult Contact() 
+        {
+            TempData["key1"]="TempData value1";
+            return View();
+        }   
     }
 }
